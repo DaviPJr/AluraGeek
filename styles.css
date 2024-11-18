@@ -50,7 +50,7 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 55px;
+  gap: 40px;
 }
 
 .section_content_cards {
@@ -175,4 +175,25 @@ footer {
   font-size: 16px;
   font-family: "IBM Plex Mono", monospace;
   font-weight: lighter;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .section_content_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
